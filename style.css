@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+header {
+  /* Sets background color to dark blue */
+  background-color: #0b1c51;
+  /* Adds 40 pixels fo space under the header
+     so that the main content isn't so close
+     to the navigation menu */
+  margin-bottom: 40px;
+}
+
+header h1 {
+  /* Sets font size */
+  font-size: 52px;
+  /* Sets text color to white. */
+  color: #fff;
+  /* Centers the text. */
+  text-align: center;
+  /* Removes the default margin and spacing */
+  margin: 0;
+  /* Pushes the text down 20 pixels. */
+  padding-top: 20px;
+}
+
+header nav {
+  /* Changes the display property to flex */
+  display: flex;
+  /* Centers the nav menu */
+  justify-content: center;
+}
+
+header nav ul {
+  /* Changes the display property to flex */
+  display: flex;
+  /* Removes the padding to the left of ul */
+  padding-left: 0;
+  /* Removes the bullet points from the list items */
+  list-style: none;
+}
+
+header nav ul li a {
+  /* Changes links font */
+  font-family: Montserrat;
+  /* The link color is white. */
+  color: #fff;
+  /* Removes the underline from the link. */
+  text-decoration: none;
+  /* Applies 20 pixels of margin to the right of each link */
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child {
+  /* Removes the margin to the right of the last anchor
+     so that the nav appears centered. */
+     margin-right: 0;   
+}
+
+@media all and (min-width: 600px) {
+  header {
+    /* Changes display to flex */
+    display: flex;
+    /* Pushes the items (the title and nav) to the far sides
+    with space in between. */
+    justify-content: space-between;
+    /* Adds 0 pixels padding top/bottom and 30 right/left */
+    padding: 0 30px;
+  }
+
+  header h1 {
+    /* Sets desktop view font size */
+    font-size: 48px;
+    /* Sets 14 pixels of margin above and below h1
+       0 pixels left and right */
+    margin: 14px 0;
+    /* Removes padding about h1 */
+    paddin-top: 0;   
+  }
+
+  header nav {
+    /* Sets nav container down */
+    margin-top: 20px;
+  }
+}
